@@ -19,7 +19,6 @@ const MainProvider = ({ children }) => {
     detailInfo: []
   })
 
-
   return (
     <>
       <mainContext.Provider

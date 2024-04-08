@@ -10,6 +10,13 @@ const BigStuff = () => {
         <Nav />
       </header>
       <main>
+        <section className='mainSection'>
+
+        </section>
+        <div>
+          <p>Add Something</p>
+          <img src="" alt="" />
+        </div>
 
       </main>
       <footer>
