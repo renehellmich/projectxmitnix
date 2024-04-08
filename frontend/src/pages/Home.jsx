@@ -1,6 +1,7 @@
 import React from 'react'
 import SearchBar from '../components/SearchBar'
 import Nav from '../components/Nav'
+import AddItem from '../components/AddItem'
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       <header>
         <SearchBar />
         <Nav />
+        <AddItem/>
       </header>
       <main>
 

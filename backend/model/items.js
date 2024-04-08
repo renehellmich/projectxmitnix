@@ -11,7 +11,7 @@ const itemModel = new Schema({
     },
     imageURL:{
         type: String,
-        required:true
+        // required:true
     },
     text:{
         type: String,
