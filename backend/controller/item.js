@@ -18,5 +18,4 @@ itemRouter.post('/create', mult.single(), async (req,res)=>{
 itemRouter.get("/", async(req, res)=>{
     const item = await Item.find().lean()
     res.json(item)
-
 })
