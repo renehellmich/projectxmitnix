@@ -2,13 +2,17 @@ import React from 'react'
 
 const AddItem = () => {
   const sub = (event) =>{
+    console.log("test")
     event.preventDefault()
     const form = event.target
     const formData= new FormData(form)
-    fetch('http://localhost:3000/item', {
+    fetch('http://localhost:3000/item/create', {
       method: 'POST',
       body: formData
     })
+  }
+  const test = (event) =>{
+    console.log("das hier wird angezeigt")
   }
   return (
     <>
