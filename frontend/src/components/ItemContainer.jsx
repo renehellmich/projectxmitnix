@@ -5,7 +5,7 @@ const ItemContainer = ({size}) => {
 
 
   useEffect(() => {
-    fetch("http://localhost:3000/item")
+    fetch(import.meta.env.VITE_BACKEND_URL+"/item")
       .then((response) => response.json())
       .then((json) => {
         setItems(json);

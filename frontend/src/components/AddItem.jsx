@@ -6,7 +6,7 @@ const AddItem = () => {
     event.preventDefault()
     const form = event.target
     const formData= new FormData(form)
-    fetch('http://localhost:3000/item/create', {
+    fetch(import.meta.env.VITE_BACKEND_URL+'/item/create', {
       method: 'POST',
       body: formData
     })
