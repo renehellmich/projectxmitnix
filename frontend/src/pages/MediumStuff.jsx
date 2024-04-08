@@ -1,6 +1,7 @@
 import React from 'react'
 import SearchBar from '../components/SearchBar'
 import Nav from '../components/Nav'
+import ItemContainer from '../components/ItemContainer'
 
 const MediumStuff = () => {
   return (
@@ -8,6 +9,7 @@ const MediumStuff = () => {
       <header>
         <SearchBar />
         <Nav />
+        <ItemContainer size={'medium'}/>
       </header>
       <main>
         <section className='mainSection'>
