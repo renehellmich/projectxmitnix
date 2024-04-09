@@ -4,6 +4,7 @@ import 'dotenv/config'
 import mongoose from 'mongoose'
 import { itemRouter } from './controller/item.js'
 import {v2 as cloudinary} from 'cloudinary'
+import { userRouter } from './controller/user.js'
 
 const PORT = 3000
 const app = express()
@@ -12,6 +13,7 @@ await mongoose.connect(process.env.MONGODB_URI)
 
 app.use(cors())
 app.use('/item', itemRouter)
+app.use('/user', userRouter)
 
 cloudinary.config({
     cloud_name: "du97czlhz",
