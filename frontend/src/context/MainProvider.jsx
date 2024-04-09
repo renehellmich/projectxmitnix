@@ -4,6 +4,8 @@ export const mainContext = createContext()
 
 const MainProvider = ({ children }) => {
 
+  const [items, setItems] = useState([])
+
   const [bigStuff, setBigStuff] = useState({
     data: [],
     detailInfo: []
@@ -22,7 +24,7 @@ const MainProvider = ({ children }) => {
   return (
     <>
       <mainContext.Provider
-      value={{bigStuff, setBigStuff, mediumStuff, setMediumStuff, smallStuff, setSmallStuff}}>
+      value={{items, setItems, bigStuff, setBigStuff, mediumStuff, setMediumStuff, smallStuff, setSmallStuff}}>
         {children}
       </mainContext.Provider>
     </>

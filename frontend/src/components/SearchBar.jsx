@@ -9,10 +9,10 @@ const SearchBar = () => {
   return (
     <>
         <div>
-            <button onClick={''}>
+            <button onClick={filterByInputValue}>
                 <img src="" alt="" />
             </button>
-            <button onClick={''}>
+            <button onClick={filterByInputValue}>
                 <img src="" alt="" />
             </button>
             <input type="text" onKeyDown={() => filterByInputValue()} />
