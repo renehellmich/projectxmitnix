@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import BigStuff from './pages/BigStuff'
 import MediumStuff from './pages/MediumStuff'
 import SmallStuff from './pages/SmallStuff'
+import Register from './pages/Register'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <Route path='/bigstuff' element={<BigStuff />} />
         <Route path='/mediumstuff' element={<MediumStuff />} />
         <Route path='/smallstuff' element={<SmallStuff />} />
+        <Route path='/register' element={<Register/>}/>
       </Routes>
 
     </>
